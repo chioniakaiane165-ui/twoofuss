@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0 0%, #ffcce0 50%, #ffb3d1 100%);
+    color: #591c38;
+    min-height: 100vh;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Judul & Kata Pengantar */
+.hero-section {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 36px 28px;
+    border-radius: 28px;
+    border: 2px solid #ff99c2;
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.12);
+}
+
+.badge {
+    display: inline-block;
+    background-color: #ff4d94;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+
+.hero-section h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.3rem;
+    color: #d63384;
+    margin-bottom: 14px;
+}
+
+.intro-text {
+    font-size: 1rem;
+    color: #6b2646;
+}
+
+/* Foto Utama */
+.main-photo-section {
+    text-align: center;
+}
+
+.photo-frame {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 24px;
+    border: 2px solid #ff80b3;
+    box-shadow: 0 12px 28px rgba(214, 51, 132, 0.15);
+    overflow: hidden;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: auto;
+    max-height: 440px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+.photo-caption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #b3246b;
+}
+
+/* Kotak Biodata */
+.bio-card {
+    background-color: #ffffff;
+    border-radius: 28px;
+    padding: 36px 28px;
+    border: 2px solid #ff99c2;
+    box-shadow: 0 12px 30px rgba(214, 51, 132, 0.14);
+    text-align: center;
+}
+
+.circle-avatar {
+    width: 165px;
+    height: 165px;
+    margin: 0 auto 18px auto;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, #ff4d94, #ff99c2);
+    box-shadow: 0 8px 20px rgba(255, 77, 148, 0.28);
+}
+
+.circle-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    display: block;
+}
+
+.profile-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.6rem;
+    color: #cc297a;
+    margin-bottom: 4px;
+}
+
+.birth-info {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #9e4770;
+    margin-bottom: 24px;
+}
+
+.bio-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.detail-item {
+    background-color: #fff0f6;
+    padding: 12px 18px;
+    border-radius: 16px;
+    border: 1px solid #ffc2dc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.detail-item .label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #b3246b;
+}
+
+.detail-item .value {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #4a152e;
+}
+
+/* Kotak Ucapan Terima Kasih */
+.thankyou-card {
+    background: linear-gradient(145deg, #fff5f9 0%, #ffe0ed 100%);
+    border-radius: 28px;
+    padding: 32px 28px;
+    border: 2px solid #ff85b8;
+    box-shadow: 0 12px 28px rgba(214, 51, 132, 0.14);
+    text-align: center;
+}
+
+.thankyou-badge {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #d63384;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 50px;
+    border: 1.5px solid #ff99c2;
+    margin-bottom: 12px;
+}
+
+.thankyou-card h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.8rem;
+    color: #cc297a;
+    margin-bottom: 10px;
+}
+
+.thankyou-text {
+    font-size: 0.98rem;
+    color: #591c38;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #991f5c;
+    padding-bottom: 12px;
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.85rem;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
